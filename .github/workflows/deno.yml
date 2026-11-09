@@ -21,6 +21,7 @@ permissions:
 jobs:
   deno-lint:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v7.0.1
         with:
@@ -54,6 +55,7 @@ jobs:
 
   deno-test-publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v7.0.1
         with:
