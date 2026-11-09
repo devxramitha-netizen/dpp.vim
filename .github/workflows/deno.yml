@@ -5,6 +5,7 @@ env:
   DENOPS_PATH: "./"
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 7 * * 0"
   push:
